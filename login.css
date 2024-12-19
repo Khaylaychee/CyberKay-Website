@@ -1,0 +1,78 @@
+*{
+  background-color: darkgrey;
+  font-family: Lobster;
+}
+.sign{
+   margin-left: 50em;
+   margin-right: 50em;
+}
+.backgrnd-col{
+  box-shadow: 4px 2px 3px 7px rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  border-radius: 8px;
+}
+.view-info{
+  text-align: center;
+  margin-right: 27px;
+  font-size: 25px;
+}
+.align{
+  grid-template-columns: 150px 130px;
+  display: grid;
+}
+.facebook{
+  background-color: #4165D5;
+  padding: 13px 15px 13px 15px;
+  font-size: 13px;
+  font-family: Arial; font-weight: bold;
+  margin-top: 2px;
+  border: 2px solid#252525;
+  border-radius: 8px;
+}
+.facebook:hover{
+  background-color: #252525;
+  color: #4165D5;
+  font-family: Lobster;
+  font-size: 16px;
+  transition: 0.20s;
+}
+.facebook:active{
+  color:white;
+}
+.google{
+  background-color: #C3E8C9;
+  padding: 15px 25px 15px 25px;
+  font-family: Arial; font-weight: bold;
+  border-radius: 8px;
+  border: 3px solid #4DA674;
+  font-size: 12px; font-style: italic;
+  cursor: pointer;
+}
+.google:hover{
+  color:#4DA674;
+  border: 3px solid #C3E8C9;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: Arial; font-style: italic;
+  transition: 0.20s;
+  padding: 15px 17px 15px 17px;
+}
+.google:active{
+  color: red;
+}
+.usrname{
+  padding: 10px 40px 10px 40px;
+  border: none;
+  background-color: white;
+  font-family: Arial;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.click{
+  margin-top: 10px;
+  background-color: #252525;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 8.5em 10px 8.5em;
+  cursor: pointer;
+}

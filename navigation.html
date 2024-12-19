@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <style>
+      body{
+        
+      }
+      ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+      }
+      li{
+        float: left;
+      }
+      li a{
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+      li a:hover{
+        background-color: #555;
+        color: white;
+      }
+      li a.active{
+        background-color: dodgerblue;
+        color: #000;
+      }
+      @media screen and (max-width:400px) {
+        ul{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          font-size: 25px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        li a{
+          padding: 14px 16px;
+        }
+      } 
+      .drop-down{
+        position: relative;
+        cursor: pointer;
+        color: white;
+        top: 8px;
+      }
+      .drop-down-content{
+        position: absolute;
+        box-shadow: 0px 2px 4px 0px;
+        padding: 20px;
+        background-color: #555;
+        color: white;
+        border: 1px solid black;
+        display: none;
+      }
+      .drop-down:hover .drop-down-content{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <div class="drop-down">
+        <p>DropDown</p>
+        <div class="drop-down-content">
+          <p class="border">Link 1</p>
+          <p class="border">Link 2</p>
+          <P  class="border">Link 3</P>
+        </div>
+      </div>
+      <li><a href="#">Contacts</a></li>
+      <li style="float: right;"><a href="#" class="active">About</a></li>
+    </ul>
+  </body>
+</html>
